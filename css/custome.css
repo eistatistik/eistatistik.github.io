@@ -25,7 +25,7 @@ color: #994411;
 }
 
 .carousel-indicators {
-  margin-top: 10px;
+  bottom: -50px;
 }
 
 .carousel-indicators li.active{
