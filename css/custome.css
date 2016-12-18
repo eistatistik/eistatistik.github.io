@@ -20,12 +20,12 @@ color: #994411;
   color: #994411;
 }
 
-.carousel-indicators {
-  color:#994411;
-}
-
 .carousel-indicators li {
 border:1px solid #ccc;
+}
+
+.carousel-indicators li.active{
+  color:#994411;
 }
 
 .carousel-control {
