@@ -41,6 +41,10 @@ color:#994411;
 background-image:none;
 }
 
+blockquote.adjust2 > cite {
+  color: #47453D;
+}
+
 .media-object {
 margin:15% auto auto;
 }
