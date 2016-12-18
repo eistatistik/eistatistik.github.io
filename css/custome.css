@@ -10,31 +10,39 @@ margin-top:20px;
 float:left;
 width:100%;
 margin-bottom:0;
-border: #E68005;
-background: #E68005;
-color: #614D35;
+border: #FFCC55;
+background: #FFCC55;
+color: #994411;
 }
 
 .adjust2 {
-margin:0;
-  color: 994411;
+  margin:0;
+  color: #994411;
 }
 
 .carousel-indicators li {
-border:1px solid #ccc;
+  border:1px solid #994411;
+}
+
+.carousel-indicators li.active{
+  background:#994411;
 }
 
 .carousel-control {
-color:#31708f;
+color:#994411;
 width:5%;
 }
 
 .carousel-control:hover,.carousel-control:focus {
-color:#31708f;
+color:#994411;
 }
 
 .carousel-control.left,.carousel-control.right {
 background-image:none;
+}
+
+blockquote.adjust2 > cite {
+  color: #47453D;
 }
 
 .media-object {
