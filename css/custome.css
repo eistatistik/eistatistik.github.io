@@ -24,6 +24,10 @@ color: #994411;
   border:1px solid #994411;
 }
 
+.carousel-indicators {
+  margin-top: 10px;
+}
+
 .carousel-indicators li.active{
   background:#994411;
 }
