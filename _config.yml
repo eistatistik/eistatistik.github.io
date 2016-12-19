@@ -4,8 +4,8 @@ email:
 description: Veri analizinin ne kadar önemli olduğunu biliyoruz. İstatistik alanındaki uzmanlığımızı sizinle paylaşma adına buradayız. Veri analizinde doğru sonuç EİSTATİSTİK ile bir adım önde.
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
-url: "https://eistatistik.github.io/" # the base hostname & protocol for your site
-# url: "https://academic.support/" # the base hostname & protocol for your site
+# url: "https://eistatistik.github.io/" # the base hostname & protocol for your site
+url: "http://academic.support/" # the base hostname & protocol for your site
 
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
 # data-ad-slot: 2973388149
