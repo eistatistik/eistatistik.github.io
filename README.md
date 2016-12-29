@@ -1,6 +1,6 @@
 Nasıl
 
 ```sh
-$ jekyll build
+$ jekyll build --watch
 $ jekyll serve
 ```
