@@ -99,3 +99,9 @@ margin-top:0;
   top: -5px;
   left: -5px;
 }
+
+.btn-sq-lg {
+  width: 150px !important;
+  height: 150px !important;
+}
+
