@@ -388,6 +388,12 @@ section {
             background-color: #d73925;
           }
         }
+        &.social-whatsapp a {
+          background-color: #25D366;
+          &:hover {
+            background-color: #24CD63;
+          }
+        }
       }
     }
   }
