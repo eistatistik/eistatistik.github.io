@@ -1,0 +1,37 @@
+<section id="tools" class="download bg-default">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-xs-12 text-center">
+        <h2 class="section-heading">Sıklıkla Kullanılan Ölçekler</h2>
+        <h3>Sizin için derledik.</h3>
+      </div>
+    </div> <!-- row -->
+
+
+    <hr/>
+
+    {% include tools/tool1.html %}
+    {% include tools/tool2.html %}
+    {% include tools/tool3.html %}
+    {% include tools/tool4.html %}
+
+    <div class='row'>
+      <div class='col-sm-12 col-xs-12'>
+        {% if site.data-ad-client %}
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- jekynewage -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="{{ site.data-ad-client }}"
+               data-ad-slot="{{ site.data-ad-slot }}"
+               data-ad-format="auto"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        {% endif %}
+      </div>
+    </div>
+
+  </div> <!-- row -->
+  </div> <!-- container -->
+</section>
