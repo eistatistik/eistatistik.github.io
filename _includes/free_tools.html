@@ -3,17 +3,32 @@
     <div class="row">
       <div class="col-sm-12 col-xs-12 text-center">
         <h2 class="section-heading">Sıklıkla Kullanılan Ölçekler</h2>
-        <h3>Sizin için derledik.</h3>
       </div>
-    </div> <!-- row -->
+    </div>
 
+    <div class="row text-center">
+      <div class="col-sm-10 col-xs-12">
+
+        <form class="form-inline">
+        <div class="form-group">
+          <label for="search_box">Sizin için derledik. Arama için yandaki kutuyu kullanabilirsiniz. </label>
+          <input type="text" id="search_box" class="form-control " style="width:37em" placeholder="Arayacağınız metni buraya yazın..." required>
+        </div>
+        </form>
+
+      </div>
+      <div class="col-sm-1 col-xs-2">
+        <input type="checkbox" class="mark" data-toggle="toggle" data-on="Vurgulu" data-off="Vurgusuz" data-onstyle="success" data-offstyle="danger">
+      </div>
+    </div>
 
     <hr/>
-
-    {% include tools/tool1.html %}
-    {% include tools/tool2.html %}
-    {% include tools/tool3.html %}
-    {% include tools/tool4.html %}
+    <div class="results">
+      {% include tools/tool1.html %}
+      {% include tools/tool2.html %}
+      {% include tools/tool3.html %}
+      {% include tools/tool4.html %}
+    </div>
 
     <div class='row'>
       <div class='col-sm-12 col-xs-12'>

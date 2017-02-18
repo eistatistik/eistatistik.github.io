@@ -12,8 +12,7 @@
 <!-- Custom Theme JavaScript -->
 <script src="/js/creative.js"></script>
 
-<!-- jQuery
-<script src="/vendor/jquery/jquery.min.js"></script> -->
+<script src="/vendor/jquery/jquery.min.js"></script>
 
 <!-- Bootstrap Core JavaScript -->
 <script src="/vendor/bootstrap/js/bootstrap.min.js"></script>
@@ -24,6 +23,8 @@
 
 <!-- Theme JavaScript -->
 <script src="/js/new-age.min.js"></script>
+<script src="/js/holmes.js"></script>
+<script src="/js/bootstrap-toggle.min.js"></script>
 
 {% if site.google_analytics %}
 <script type="text/javascript">
@@ -54,3 +55,67 @@ s0.parentNode.insertBefore(s1,s0);
 })();
 </script>
 <!--End of Tawk.to Script-->
+
+<script type="text/javascript">
+// holmes setup
+var h = holmes({
+  input: 'input#search_box',
+  find: '.results .row.well',
+  placeholder: '<h3>— Sonuç bululunamadı. —</h3>',
+  mark: false,
+  hiddenAttr: true,
+  class: {
+    visible: 'visible',
+    hidden: 'hidden'
+  },
+  onHidden(el) {
+    console.log('hidden', el);
+  },
+  onFound(el) {
+    console.log('found', el);
+  },
+  onInput(el) {
+    console.log('input', el);
+  },
+  onVisible(el) {
+    console.log('visible', el);
+  },
+  onEmpty(el) {
+    console.log('empty', el);
+  }
+});
+
+// show all of the options
+//document.getElementById('more').addEventListener('click',function(e){
+//  e.preventDefault();
+//  document.getElementById('full-doc').classList.toggle('hidden');
+//});
+
+// Toggle clicked class
+var actions = document.querySelectorAll('[data-tooltip]');
+
+for (var i = 0; i < actions.length; i++ ) {
+  actions[i].addEventListener('click', function() {
+    if (this.classList.contains('clicked')) {
+      this.classList.remove('clicked')
+    } else {
+      this.classList.add('clicked')
+    }
+  })
+}
+
+// toggle for showing hidden elements
+//document.querySelector('.visible').addEventListener('click', function(e) {
+//  document.querySelector('.results').classList.toggle('classes');
+//});
+
+//document.querySelector('.mark').addEventListener('change',function(){
+$('.mark').change(function() {
+  h.stop().then(function(){
+    h.options.mark = !h.options.mark;
+    h.start();
+    // hack to make it run at button click
+    h.input.dispatchEvent(new Event('input'));
+  })
+});
+</script>
