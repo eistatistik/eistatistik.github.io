@@ -5,8 +5,10 @@ description: Veri analizinin ne kadar önemli olduğunu biliyoruz. İstatistik a
 
 baseurl: "" # the subpath of your site, e.g. /blog/ (If you use organization leave empty)
 # url: "https://eistatistik.github.io/" # the base hostname & protocol for your site
-url: "http://eistatistik.com" # the base hostname & protocol for your site
+url: "https://eistatistik.com" # the base hostname & protocol for your site
 dname: "eistatistik.com"
+
+enforce_ssl: eistatistik.com   # without any protocol
 
 #Google Ad Words Data from scripts code (using Google responsive options) and ad client
 # data-ad-slot: 2973388149
