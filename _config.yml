@@ -17,6 +17,7 @@ enforce_ssl: eistatistik.com   # without any protocol
 
 google_analytics: "UA-89117195-1"
 addthis_id: ra-5855a894d8309ae3
+#yandex_metrica: 
 # disqus_account: jeky-new-age
 
 # Social networks usernames (many more available: flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.) see all icon at fontawesome.io
