@@ -8,12 +8,75 @@
     </div> <!-- row -->
 
     <div class="row">
-      <div class="col-sm-12 col-xs-12">
-        <picture>
+      <div class="col-sm-3 col-xs-3" >
+        <h3>Nasıl işler?</h3>
+        <div class="list-group">
+          <a href="#" class="list-group-item active" id="howto-giris" onclick="howto_slideTo(this, event, 0);">
+            <i class="fa fa-sign-in fa-3x pull-left"></i>
+            <h4>Giriş Yapın</h4>
+          </a>
+
+          <a href="#" class="list-group-item" id="howto-anasayfa" onclick="howto_slideTo(this, event, 1);">
+            <i class="fa fa-dashboard fa-3x pull-left"></i>
+            <h4>Anasayfa</h4>
+          </a>
+
+          <a href="#" class="list-group-item" id="howto-sec" onclick="howto_slideTo(this, event, 2);">
+            <i class="fa fa-check-square-o fa-3x pull-left"></i>
+            <h4>Analizi Seçin</h4>
+          </a>
+
+          <a href="#" class="list-group-item" id="howto-talep" onclick="howto_slideTo(this, event, 3);">
+            <i class="fa fa-plus fa-3x pull-left"></i>
+            <h4>Talep Et</h4>
+          </a>
+
+          <a href="#" class="list-group-item" id="howto-odeme" onclick="howto_slideTo(this, event, 4);">
+            <i class="fa fa-credit-card-alt fa-3x pull-left"></i>
+            <h4>Ödeme</h4>
+          </a>
+
+          <a href="#" class="list-group-item" id="howto-teslimat" onclick="howto_slideTo(this, event, 5);">
+            <i class="fa fa-paper-plane fa-3x pull-left"></i>
+            <h4>Teslimat</h4>
+          </a>
+
+          <a href="#" class="list-group-item" id="howto-yazisma" onclick="howto_slideTo(this, event, 6);">
+            <i class="fa fa-comments fa-3x pull-left"></i>
+            <h4>Yazışma</h4>
+          </a>
+        </div>
+      </div>
+
+     <div class="col-sm-9 col-xs-9">
+      <div class="device-mockup" data-device="macbook" data-orientation="portrait" data-color="black">
+          <div class="device">
+              <div class="screen">
+                  <!-- Swiper -->
+                  <div class="swiper-container">
+                      <div class="swiper-wrapper">
+                          <div class="swiper-slide"><img src="img/howto/ekran1_login.jpg" class="img-responsive img-rounded"></div>
+                          <div class="swiper-slide"><img src="img/howto/ekran2_anasayfa.jpg" class="img-responsive img-rounded"></div>
+                          <div class="swiper-slide"><img src="img/howto/ekran3_sec.jpg" class="img-responsive img-rounded"></div>
+                          <div class="swiper-slide"><img src="img/howto/ekran4_talep.jpg" class="img-responsive img-rounded"></div>
+                          <div class="swiper-slide"><img src="img/howto/ekran5_odeme.jpg" class="img-responsive img-rounded"></div>
+                          <div class="swiper-slide"><img src="img/howto/ekran6_teslimat.jpg" class="img-responsive img-rounded"></div>
+                          <div class="swiper-slide"><img src="img/howto/ekran7_yazisma.jpg" class="img-responsive img-rounded"></div>
+                      </div>
+                      <!-- Add Pagination -->
+                      <div class="swiper-pagination"></div>
+                  </div>
+              </div>
+              <div class="button">
+                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+              </div>
+          </div>
+      </div>
+        <!--picture>
           <source srcset="img/howto/kolaj_xs.jpg" media="(max-width: 780px)">
           <source srcset="img/howto/kolaj.jpg">
           <img src="img/howto/kolaj.jpg" class="img-responsive img-rounded">
-        </picture>
+        </picture-->
       </div>
     </div> <!-- row -->
 
@@ -24,110 +87,6 @@
     </div> <!-- row -->
 
     <hr/>
-
-    <div class="row">
-      <div class="col-sm-offset-2 col-sm-4 col-xs-12">
-
-        <div class="media">
-          <div class="media-body text-right">
-            <h4 class="media-heading">Giriş Yapın</h4>
-            Facebook ile de giriş yapabilirsiniz.
-          </div>
-
-          <div class="media-right">
-            <div class="quick-btn-left">
-              <i class="fa fa-sign-in fa-4x text-warning"></i><br/>
-              <!-- span>Giriş</span -->
-              <span class="label label-warning">1</span>
-            </div>
-
-          </div>
-        </div> <!-- media -->
-
-        <div class="media">
-          <div class="media-body text-right">
-            <h4 class="media-heading">Anasayfa</h4>
-            Anasayfadan yeni iş girişi yapabilir veya öncek iş kayıtlarınızı düzenleyebilirsiniz.
-          </div>
-
-          <div class="media-right">
-            <div class="quick-btn-left">
-              <i class="fa fa-dashboard fa-4x text-warning"></i><br/>
-              <!-- span>Ana Sayfa</span -->
-              <span class="label label-warning">2</span>
-            </div>
-
-          </div>
-        </div> <!-- media -->
-
-        <div class="media">
-          <div class="media-body text-right">
-            <h4 class="media-heading">Analizi Seç</h4>
-            Talep ettiğiniz analizi seçiniz.
-          </div>
-
-          <div class="media-right">
-            <div class="quick-btn-left">
-              <i class="fa fa-check-square-o fa-4x text-warning"></i><br/>
-              <!-- span>Seçim</span -->
-              <span class="label label-warning">3</span>
-            </div>
-
-          </div>
-        </div> <!-- media -->
-
-      </div>
-
-      <div class="col-sm-4 col-xs-12">
-
-
-        <div class="media">
-          <div class="media-left">
-            <div class="quick-btn">
-              <i class="fa fa-plus fa-4x text-warning"></i><br/>
-              <!-- span>Talep Et</span -->
-              <span class="label label-warning">4</span>
-            </div>
-
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Talep Et</h4>
-            Talebinizin ayrıntılarını giriniz. Anket formunu ve/ya örnek makalenizi yükleyiniz.
-          </div>
-        </div> <!-- media -->
-
-        <div class="media">
-          <div class="media-left">
-            <div class="quick-btn">
-              <i class="fa fa-credit-card-alt fa-4x text-warning"></i><br/>
-              <!-- span>Ödeme</span -->
-              <span class="label label-warning">5</span>
-            </div>
-
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Online Ödemenizi Gerçekleştirebilirsiniz</h4>
-            Ödemenizi 3d güvenli ödeme imkanıyla gerçekleştirebilirsiniz.
-          </div>
-        </div> <!-- media -->
-
-        <div class="media">
-          <div class="media-left">
-            <div class="quick-btn">
-              <i class="fa fa-paper-plane fa-4x text-warning"></i><br/>
-              <!-- span>Teslimat</span -->
-              <span class="label label-warning">6</span>
-            </div>
-
-          </div>
-          <div class="media-body">
-            <h4 class="media-heading">Teslimat</h4>
-            Analiz panelinden analiz raporunuzu indirebilirsiniz.
-          </div>
-        </div> <!-- media -->
-
-      </div>
-    </div> <!-- row -->
 
     <div class='row'>
       <div class='col-sm-12 col-xs-12'>
@@ -149,3 +108,73 @@
   </div> <!-- row -->
   </div> <!-- container -->
 </section>
+
+<link rel="stylesheet" href="/css/swiper.css">
+<style>
+   .swiper-container2 {
+        width: 500px;
+        height: 300px;
+        margin: 20px auto;
+    }
+    .swiper-slide2 {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+    }
+    </style>
+<script src="/js/jquery-2.1.3.min.js"></script>
+<script src="/js/swiper.jquery.js"></script>
+
+<script type="text/javascript">
+  var active_no = 0;
+
+  swiper2 = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      direction: 'vertical',
+      effect: 'fade',
+      //autoplay: 500,
+  });
+
+  function howto_slideTo(element, event, no) {
+    event.preventDefault();
+    helper($(element), no);
+    active_no = no;
+  }
+
+  function helper(element, no) {
+    swiper2.slideTo(no, 1000);
+    $('.list-group-item').removeClass('active')
+    element.addClass('active');
+  }
+
+  setInterval(function(){
+    var active = $('.list-group-item.active');
+    var first  = $('.list-group-item').siblings().first();
+    var last   = $('.list-group-item').siblings().last();
+
+    if(active.is(last)) {
+      active_no = 0;
+      helper(first, active_no);
+    } else {
+      active_no += 1;
+      helper(active.next(), active_no);
+    }
+  }, 1500);
+</script>
+
+

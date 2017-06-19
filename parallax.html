@@ -7,6 +7,7 @@
 
     <!-- Link Swiper's CSS -->
     <link rel="stylesheet" href="/css/swiper.css">
+<link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" type="text/css">
 
     <!-- Demo styles -->
     <style>
@@ -57,7 +58,36 @@
         max-width: 400px;
         line-height: 1.3;
     }
-
+    .swiper-pagination-bullet {
+        width: 20px;
+        height: 20px;
+        text-align: center;
+        line-height: 20px;
+        font-size: 12px;
+        color:#000;
+        opacity: 1;
+        background: rgba(0,0,0,0.2);
+    }
+    .swiper-pagination-bullet-active {
+        color:#fff;
+        background: #007aff;
+    }
+    /* IFRAME'den dolayi 768px yerine 500px */
+    @media only screen and (max-width : 500px) {
+        .swiper-slide .title {
+            margin-top: 0px;
+            font-size: 21px;
+            font-weight: 300;
+        }
+        .swiper-slide .subtitle {
+            font-size: 12px;
+        }
+        .swiper-slide .text {
+            font-size: 8px;
+            max-width: 100%;
+            line-height: 1;
+        }
+    }
     </style>
 </head>
 <body>
@@ -92,7 +122,7 @@ https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAZSAAAAJDRmZDg2ZDVhLWYyNmMtNGM0MC1i
             </div>
         </div>
         <!-- Add Pagination -->
-        <div class="swiper-pagination swiper-pagination-white"></div>
+        <div class="swiper-pagination"></div>
         <!-- Add Navigation -->
         <!--div class="swiper-button-prev swiper-button-white"></div>
         <div class="swiper-button-next swiper-button-white"></div-->
@@ -104,15 +134,18 @@ https://media.licdn.com/mpr/mpr/AAEAAQAAAAAAAAZSAAAAJDRmZDg2ZDVhLWYyNmMtNGM0MC1i
 
     <!-- Initialize Swiper -->
     <script>
-    var swiper = new Swiper('.swiper-container', {
-        //pagination: '.swiper-pagination',
-        //paginationClickable: true,
-        //nextButton: '.swiper-button-next',
-        //prevButton: '.swiper-button-prev',
+    swiper = new Swiper('.swiper-container', {
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
         parallax: true,
         speed: 600,
         autoplay: 1500,
         loop: true,
+        paginationBulletRender: function (swiper, index, className) {
+            return '<span class="' + className + '">' + (index + 1) + '</span>';
+        }
     });
     </script>
 </body>
