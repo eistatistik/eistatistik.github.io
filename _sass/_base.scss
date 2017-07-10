@@ -156,13 +156,16 @@ header {
   width: 100%;
   min-height: auto;
   overflow-y: hidden;
-  background: url("../img/bg-pattern.png"), $head-primary;
+  //background: url("../img/bg-pattern.png"), $head-primary;
+  background: url("../img/bg1.jpg") no-repeat ;
+  background-size: 100%;
   /* fallback for old browsers */
-  background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, $head-primary, $head-secondary);
+  //background: url("../img/bg-pattern.png"), -webkit-linear-gradient(to left, $head-primary, $head-secondary);
   /* Chrome 10-25, Safari 5.1-6 */
-  background: url("../img/bg-pattern.png"), linear-gradient(to left, $head-primary, $head-secondary);
+  //background: url("../img/bg-pattern.png"), linear-gradient(to left, $head-primary, $head-secondary);
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-  color: white;
+  color: #FDCB4F;
+  text-shadow: 1px 1px 5px black;
   .header-content {
     text-align: center;
     padding: 150px 0 50px;
