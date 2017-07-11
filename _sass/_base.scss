@@ -166,7 +166,7 @@ header {
   /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   color: #ff6550;
   //text-shadow: 1px 1px 5px #bf983d, 0px 0px 10px #CA9D14;
-  text-shadow: 1px 1px 5px #942313, 0px 0px 10px #ffffff;
+  //text-shadow: 1px 1px 5px #942313, 0px 0px 10px #ffffff;
   .header-content {
     text-align: center;
     padding: 150px 0 50px;
@@ -198,6 +198,18 @@ header {
   }
 }
 
+@media (max-width: 767px) {
+  header {
+    background: url("../img/bg1_small.jpg") no-repeat ;
+    .header-content {
+      .header-content-inner {
+        a.btn-lg {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
 @media (min-width: 768px) {
   header {
     min-height: 100%;
