@@ -7,77 +7,83 @@
       </div>
     </div> <!-- row -->
 
-    <div class="row">
-      <div class="col-sm-3 col-xs-3" >
-        <h3>Nasıl işler?</h3>
-        <div class="list-group">
-          <a href="#" class="list-group-item active" id="howto-giris" onclick="howto_slideTo(this, event, 0);">
-            <i class="fa fa-sign-in fa-3x pull-left"></i>
-            <h4>Giriş Yapın</h4>
-          </a>
+    <div class="row scrollme">
+      <div class="animateme scrollme" data-when="enter" data-from="1" data-to="0" data-opacity="0" data-translatex="-200">
 
-          <a href="#" class="list-group-item" id="howto-anasayfa" onclick="howto_slideTo(this, event, 1);">
-            <i class="fa fa-dashboard fa-3x pull-left"></i>
-            <h4>Anasayfa</h4>
-          </a>
+        <div class="col-sm-3 col-xs-3" >
+          <h3>Nasıl işler?</h3>
+          <div class="list-group">
+            <a href="#" class="list-group-item active" id="howto-giris" onclick="howto_slideTo(this, event, 0);">
+              <i class="fa fa-sign-in fa-3x pull-left"></i>
+              <h4>Giriş Yapın</h4>
+            </a>
 
-          <a href="#" class="list-group-item" id="howto-sec" onclick="howto_slideTo(this, event, 2);">
-            <i class="fa fa-check-square-o fa-3x pull-left"></i>
-            <h4>Analizi Seçin</h4>
-          </a>
+            <a href="#" class="list-group-item" id="howto-anasayfa" onclick="howto_slideTo(this, event, 1);">
+              <i class="fa fa-dashboard fa-3x pull-left"></i>
+              <h4>Anasayfa</h4>
+            </a>
 
-          <a href="#" class="list-group-item" id="howto-talep" onclick="howto_slideTo(this, event, 3);">
-            <i class="fa fa-plus fa-3x pull-left"></i>
-            <h4>Talep Et</h4>
-          </a>
+            <a href="#" class="list-group-item" id="howto-sec" onclick="howto_slideTo(this, event, 2);">
+              <i class="fa fa-check-square-o fa-3x pull-left"></i>
+              <h4>Analizi Seçin</h4>
+            </a>
 
-          <a href="#" class="list-group-item" id="howto-odeme" onclick="howto_slideTo(this, event, 4);">
-            <i class="fa fa-credit-card-alt fa-3x pull-left"></i>
-            <h4>Ödeme</h4>
-          </a>
+            <a href="#" class="list-group-item" id="howto-talep" onclick="howto_slideTo(this, event, 3);">
+              <i class="fa fa-plus fa-3x pull-left"></i>
+              <h4>Talep Et</h4>
+            </a>
 
-          <a href="#" class="list-group-item" id="howto-teslimat" onclick="howto_slideTo(this, event, 5);">
-            <i class="fa fa-paper-plane fa-3x pull-left"></i>
-            <h4>Teslimat</h4>
-          </a>
+            <a href="#" class="list-group-item" id="howto-odeme" onclick="howto_slideTo(this, event, 4);">
+              <i class="fa fa-credit-card-alt fa-3x pull-left"></i>
+              <h4>Ödeme</h4>
+            </a>
 
-          <a href="#" class="list-group-item" id="howto-yazisma" onclick="howto_slideTo(this, event, 6);">
-            <i class="fa fa-comments fa-3x pull-left"></i>
-            <h4>Yazışma</h4>
-          </a>
+            <a href="#" class="list-group-item" id="howto-teslimat" onclick="howto_slideTo(this, event, 5);">
+              <i class="fa fa-paper-plane fa-3x pull-left"></i>
+              <h4>Teslimat</h4>
+            </a>
+
+            <a href="#" class="list-group-item" id="howto-yazisma" onclick="howto_slideTo(this, event, 6);">
+              <i class="fa fa-comments fa-3x pull-left"></i>
+              <h4>Yazışma</h4>
+            </a>
+          </div>
         </div>
       </div>
 
-     <div class="col-sm-9 col-xs-9">
-      <div class="device-mockup" data-device="macbook" data-orientation="portrait" data-color="black">
-          <div class="device">
-              <div class="screen">
-                  <!-- Swiper -->
-                  <div class="swiper-container">
-                      <div class="swiper-wrapper">
-                          <div class="swiper-slide"><img src="img/howto/ekran1_login.jpg" class="img-responsive img-rounded"></div>
-                          <div class="swiper-slide"><img src="img/howto/ekran2_anasayfa.jpg" class="img-responsive img-rounded"></div>
-                          <div class="swiper-slide"><img src="img/howto/ekran3_sec.jpg" class="img-responsive img-rounded"></div>
-                          <div class="swiper-slide"><img src="img/howto/ekran4_talep.jpg" class="img-responsive img-rounded"></div>
-                          <div class="swiper-slide"><img src="img/howto/ekran5_odeme.jpg" class="img-responsive img-rounded"></div>
-                          <div class="swiper-slide"><img src="img/howto/ekran6_teslimat.jpg" class="img-responsive img-rounded"></div>
-                          <div class="swiper-slide"><img src="img/howto/ekran7_yazisma.jpg" class="img-responsive img-rounded"></div>
-                      </div>
-                      <!-- Add Pagination -->
-                      <div class="swiper-pagination"></div>
-                  </div>
-              </div>
-              <div class="button">
-                  <!-- You can hook the "home button" to some JavaScript events or just remove it -->
-              </div>
-          </div>
+      <div class="animateme scrollme" data-when="enter" data-from="1" data-to="0" data-opacity="0" data-translatex="200" data-translatey="-300">
+       <div class="col-sm-9 col-xs-9">
+        <div class="device-mockup" data-device="macbook" data-orientation="portrait" data-color="black">
+            <div class="device">
+                <div class="screen">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/howto/ekran1_login.jpg" class="img-responsive img-rounded"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran2_anasayfa.jpg" class="img-responsive img-rounded"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran3_sec.jpg" class="img-responsive img-rounded"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran4_talep.jpg" class="img-responsive img-rounded"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran5_odeme.jpg" class="img-responsive img-rounded"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran6_teslimat.jpg" class="img-responsive img-rounded"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran7_yazisma.jpg" class="img-responsive img-rounded"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+            </div>
+        </div>
+          <!--picture>
+            <source srcset="img/howto/kolaj_xs.jpg" media="(max-width: 780px)">
+            <source srcset="img/howto/kolaj.jpg">
+            <img src="img/howto/kolaj.jpg" class="img-responsive img-rounded">
+          </picture-->
+        </div>
       </div>
-        <!--picture>
-          <source srcset="img/howto/kolaj_xs.jpg" media="(max-width: 780px)">
-          <source srcset="img/howto/kolaj.jpg">
-          <img src="img/howto/kolaj.jpg" class="img-responsive img-rounded">
-        </picture-->
-      </div>
+
     </div> <!-- row -->
 
     <div class="row">
