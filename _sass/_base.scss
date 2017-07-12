@@ -201,6 +201,7 @@ header {
 @media (max-width: 767px) {
   header {
     background: url("../img/bg1_small.jpg") no-repeat ;
+    text-shadow: 1px 1px 5px #610000, 0px 0px 10px #f1f1f1;
     .header-content {
       .header-content-inner {
         a.btn-lg {
