@@ -38,8 +38,12 @@
     // Offset for Main Navigation
     $('#mainNav').affix({
         offset: {
-            top: 100
+            top: 100;
         }
+    })
+
+    $('#mainNav').on('affixed.bs.affix', function () {
+        $('#logo').attr('src', './img/logo_tcolor2.png');
     })
 
     // Initialize WOW.js Scrolling Animations
