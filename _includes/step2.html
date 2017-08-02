@@ -147,27 +147,7 @@
 <script type="text/javascript">
   var active_no = 0;
 
-  swiper2 = new Swiper('.swiper-container', {
-      pagination: '.swiper-pagination',
-      paginationClickable: true,
-      direction: 'vertical',
-      effect: 'fade',
-      //autoplay: 500,
-  });
-
-  function howto_slideTo(element, event, no) {
-    event.preventDefault();
-    helper($(element), no);
-    active_no = no;
-  }
-
-  function helper(element, no) {
-    swiper2.slideTo(no, 2000);
-    $('.list-group-item').removeClass('active')
-    element.addClass('active');
-  }
-
-  setInterval(function(){
+  var sliderIntervalId = setInterval(function(){
     var active = $('.list-group-item.active');
     var first  = $('.list-group-item').siblings().first();
     var last   = $('.list-group-item').siblings().last();
@@ -180,6 +160,29 @@
       helper(active.next(), active_no);
     }
   }, 3000);
+
+  swiper2 = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      direction: 'vertical',
+      effect: 'fade',
+      //autoplay: 500,
+  });
+
+  function howto_slideTo(element, event, no) {
+    event.preventDefault();
+    helper($(element), no);
+    active_no = no;
+
+    clearInterval(sliderIntervalId);
+  }
+
+  function helper(element, no) {
+    swiper2.slideTo(no, 2000);
+    $('.list-group-item').removeClass('active')
+    element.addClass('active');
+  }
+
 </script>
 
 
