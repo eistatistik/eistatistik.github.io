@@ -167,6 +167,7 @@ header {
   color: #ff6550;
   //text-shadow: 1px 1px 5px #bf983d, 0px 0px 10px #CA9D14;
   //text-shadow: 1px 1px 5px #942313, 0px 0px 10px #ffffff;
+
   .header-content {
     text-align: center;
     padding: 150px 0 50px;
@@ -189,6 +190,7 @@ header {
       }
     }
   }
+
   .device-container {
     max-width: 300px;
     margin: 0 auto 100px;
@@ -196,7 +198,16 @@ header {
       border-radius: 3px;
     }
   }
+
+
+  &.career {
+    background: url("../img/bg_career_org.jpg") no-repeat ;
+    background-size: 100%;
+    // text-shadow: 1px 1px 5px #bf983d, 0px 0px 10px #CA9D14;
+    //text-shadow: 1px 1px 5px #942313, 0px 0px 10px #ffffff;
+  }
 }
+
 
 @media (max-width: 767px) {
   header {
