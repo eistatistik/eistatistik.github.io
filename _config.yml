@@ -26,8 +26,8 @@ social:
     url: https://twitter.com/naci_murat
   - title: facebook
     url: https://facebook.com/eistatistik
-  #- title: google-plus
-  #  url: https://plus.google.com/+AntoniotrentoIt
+  - title: google-plus
+    url: https://plus.google.com/u/1/104076744913492309608
 
 # Build settings
 markdown: kramdown
