@@ -1,7 +1,7 @@
 <head>
 
     <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--[if IE]><meta http-equiv="X-UA-Compatible" content="IE=edge"><![endif]-->
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Verileriniz akademik ellerde - Online İstatistik Otomasyonu. İstatistiksel Analiz ve Eğitim, Raporlama, Power Analiz, Veri İşleme, Geçerlilik Testi">
     <meta name="Keywords" content="online istatistik otomasyonu, istatistik eğitimi, istatiksel analiz, istatistik otomasyonu, uygulamali istatistik, akademik, üniversite, doktor, öğrenci, yüksek lisans, doktora, tez, makale">
@@ -10,7 +10,7 @@
 
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
 
-    <link rel="canonical" href="{{ site.url }}{{ page.url }}" />
+    <link data-rel="canonical" href="{{site.url}}{{page.url}}" />
 
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="/vendor/bootstrap/css/bootstrap.min.css" type="text/css">
@@ -61,8 +61,8 @@
             window.location.protocol = "https";
     </script>
 
-
-    <link rel="stylesheet" href="/css/swiper.css">
+    <link rel="stylesheet" href="/css/style.css"  property='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/css/swiper.css" property='stylesheet' type='text/css'>
     <style>
        .swiper-container2 {
             width: 500px;
