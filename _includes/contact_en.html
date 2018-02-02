@@ -1,0 +1,51 @@
+<section id="contact" class="contact bg-primary">
+  <div class="container">
+    <h2>We are very happy <i class="fa fa-heart"></i> to see you among us!</h2>
+
+    <ul class="list-inline list-social">
+      {% for network in site.social %}
+      <li class="social-{{ network.title }}">
+        <a href="{{ network.url }}" class="btn-social btn-outline"><i class="fa fa-fw fa-{{ network.title }}"></i></a>
+      </li>
+      {% endfor %}
+
+      <li class="social-whatsapp visible-xs-inline-block">
+        <a href="whatsapp://send?text=Hello%20Request%20information%20about%20Eistatistik%20" data-action="share/whatsapp/share" class="btn-social btn-outline">
+          <i class="fa fa-volume-control-phone"></i></a>
+       </li>
+
+      <!--li class="social-whatsapp visible-xs-inline-block">
+        <a href="intent://send/905333619720#Intent;scheme=smsto;package=com.whatsapp;action=android.intent.action.SENDTO;end" data-action="share/whatsapp/share" class="btn-social btn-outline">
+          <i class="fa fa-whatsapp"></i></a>
+      </li-->
+
+      <li class="social-whatsapp visible-xs-inline-block">
+        <a href="tel:08508851256">
+          <i class="fa fa-phone"></i></a>
+      </li>
+
+      <li class="social-whatsapp visible-lg-inline-block visible-md-inline-block">
+        <h2 class="text-success"><i class="fa fa-phone"></i> 0850 885 12 56</h2>
+      </li>
+    </ul>
+    <!-- <ul class="list-inline list-social">
+      <li class="social-twitter">
+      <a href="#"><i class="fa fa-twitter"></i></a>
+      </li>
+      <li class="social-facebook">
+      <a href="#"><i class="fa fa-facebook"></i></a>
+      </li>
+      <li class="social-google-plus">
+      <a href="#"><i class="fa fa-google-plus"></i></a>
+      </li>
+      </ul> -->
+
+      <br>
+
+      <a class="btn btn-lg btn-danger btn-outline hvr-sweep-to-right hvr-outline-in" href="http://{{site.dname}}/career" style="border-radius: 5px;">
+        <i class="fa fa-puzzle-piece fa-3x pull-left"></i>EISTATISTIK Family <br> <b> Career Page!</b>
+      </a>
+  </div>
+</section>
+
+{% include footer_en.html %}

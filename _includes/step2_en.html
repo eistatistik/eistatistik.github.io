@@ -1,0 +1,166 @@
+<section id="step2">
+
+  <div class="container">
+
+    <div class="row">
+      <div class="col-sm-12 col-xs-12 text-center">
+        <h2 class="section-heading">For Everyone Who Needs Statistical</h2>
+        <h3>Online Statistics Automation</h3>
+      </div>
+    </div> <!-- row -->
+
+    <div class="row">
+
+      <div class="col-sm-3 col-xs-12 scrollme" >
+        <div class="animateme scrollme" data-when="enter" data-from="1" data-to="0" data-opacity="0" data-translatex="-200">
+          <h3>How does it work?</h3>
+          <div class="list-group">
+            <a href="#" class="list-group-item active" id="howto-giris" onclick="howto_slideTo(this, event, 0);">
+              <i class="fa fa-sign-in fa-3x pull-left"></i>
+              <h4>Login</h4>
+            </a>
+
+            <a href="#" class="list-group-item" id="howto-anasayfa" onclick="howto_slideTo(this, event, 1);">
+              <i class="fa fa-dashboard fa-3x pull-left"></i>
+              <h4>Dashboard</h4>
+            </a>
+
+            <a href="#" class="list-group-item" id="howto-sec" onclick="howto_slideTo(this, event, 2);">
+              <i class="fa fa-check-square-o fa-3x pull-left"></i>
+              <h4>Select Analysis</h4>
+            </a>
+
+            <a href="#" class="list-group-item" id="howto-talep" onclick="howto_slideTo(this, event, 3);">
+              <i class="fa fa-plus fa-3x pull-left"></i>
+              <h4>Request</h4>
+            </a>
+
+            <a href="#" class="list-group-item" id="howto-odeme" onclick="howto_slideTo(this, event, 4);">
+              <i class="fa fa-credit-card-alt fa-3x pull-left"></i>
+              <h4>Payment</h4>
+            </a>
+
+            <a href="#" class="list-group-item" id="howto-teslimat" onclick="howto_slideTo(this, event, 5);">
+              <i class="fa fa-paper-plane fa-3x pull-left"></i>
+              <h4>Delivery</h4>
+            </a>
+
+            <a href="#" class="list-group-item" id="howto-yazisma" onclick="howto_slideTo(this, event, 6);">
+              <i class="fa fa-comments fa-3x pull-left"></i>
+              <h4>CRM</h4>
+            </a>
+          </div>
+        </div>
+      </div>
+      
+     <div class="col-sm-9 col-xs-12 scrollme">
+
+      <div class="animateme scrollme" data-when="enter" data-from="1" data-to="0" data-opacity="0" data-translatex="200" data-translatey="-300">
+        <div class="device-mockup" data-device="macbook" data-orientation="portrait" data-color="black">
+            <div class="device">
+                <div class="screen">
+                    <!-- Swiper -->
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><img src="img/howto/ekran1_login.jpg" class="img-responsive img-rounded" alt="Login"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran2_anasayfa.jpg" class="img-responsive img-rounded" alt="Dashboard"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran3_sec.jpg" class="img-responsive img-rounded" alt="Select"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran4_talep.jpg" class="img-responsive img-rounded" alt="Request"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran5_odeme.jpg" class="img-responsive img-rounded" alt="Payment"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran6_teslimat.jpg" class="img-responsive img-rounded" alt="Delivery"></div>
+                            <div class="swiper-slide"><img src="img/howto/ekran7_yazisma.jpg" class="img-responsive img-rounded" alt="CRM"></div>
+                        </div>
+                        <!-- Add Pagination -->
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+                <div class="button">
+                    <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+                </div>
+            </div>
+        </div>
+
+          <!--picture>
+            <source srcset="img/howto/kolaj_xs.jpg" media="(max-width: 780px)">
+            <source srcset="img/howto/kolaj.jpg">
+            <img src="img/howto/kolaj.jpg" class="img-responsive img-rounded">
+          </picture-->
+
+        </div>
+      </div>
+
+    </div> <!-- row -->
+
+    <div class="row">
+      <div class="col-sm-12 col-xs-12">
+        &nbsp;
+      </div>
+    </div> <!-- row -->
+
+    <hr/>
+
+    <div class='row'>
+      <div class='col-sm-12 col-xs-12'>
+        {% if site.data-ad-client %}
+          <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+          <!-- jekynewage -->
+          <ins class="adsbygoogle"
+               style="display:block"
+               data-ad-client="{{ site.data-ad-client }}"
+               data-ad-slot="{{ site.data-ad-slot }}"
+               data-ad-format="auto"></ins>
+          <script>
+          (adsbygoogle = window.adsbygoogle || []).push({});
+          </script>
+        {% endif %}
+      </div>
+    </div>
+
+  </div> <!-- container -->
+</section>
+
+<script src="/js/jquery-2.1.3.min.js"></script>
+<script src="/js/swiper.jquery.js"></script>
+
+<script type="text/javascript">
+  var active_no = 0;
+
+  var sliderIntervalId = setInterval(function(){
+    var active = $('.list-group-item.active');
+    var first  = $('.list-group-item').siblings().first();
+    var last   = $('.list-group-item').siblings().last();
+
+    if(active.is(last)) {
+      active_no = 0;
+      helper(first, active_no);
+    } else {
+      active_no += 1;
+      helper(active.next(), active_no);
+    }
+  }, 3000);
+
+  swiper2 = new Swiper('.swiper-container', {
+      pagination: '.swiper-pagination',
+      paginationClickable: true,
+      direction: 'vertical',
+      effect: 'fade',
+      //autoplay: 500,
+  });
+
+  function howto_slideTo(element, event, no) {
+    event.preventDefault();
+    helper($(element), no);
+    active_no = no;
+
+    clearInterval(sliderIntervalId);
+  }
+
+  function helper(element, no) {
+    swiper2.slideTo(no, 2000);
+    $('.list-group-item').removeClass('active')
+    element.addClass('active');
+  }
+
+</script>
+
+
